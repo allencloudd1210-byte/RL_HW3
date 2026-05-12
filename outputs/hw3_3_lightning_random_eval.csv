@@ -1,0 +1,301 @@
+episode,won,raw_return,moves,actions
+1,True,9.0,2,u u
+2,True,6.0,5,l u u u r
+3,True,6.0,5,l l d d d
+4,True,7.0,4,l l d l
+5,False,-45.0,45,d r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r
+6,True,9.0,2,r u
+7,True,7.0,4,d r d d
+8,True,10.0,1,d
+9,True,9.0,2,l d
+10,True,10.0,1,d
+11,True,10.0,1,l
+12,True,7.0,4,l l d l
+13,True,6.0,5,r u r r u
+14,True,7.0,4,r r d r
+15,True,10.0,1,r
+16,True,8.0,3,u l l
+17,True,10.0,1,r
+18,True,6.0,5,d r r d r
+19,True,9.0,2,u u
+20,True,10.0,1,u
+21,True,7.0,4,l l d d
+22,True,10.0,1,r
+23,True,7.0,4,u l l l
+24,True,4.0,7,u l u u r r r
+25,True,7.0,4,d l l d
+26,False,-45.0,45,l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l
+27,True,5.0,6,r r d r d d
+28,True,9.0,2,r u
+29,True,8.0,3,l d d
+30,True,10.0,1,l
+31,True,8.0,3,u l u
+32,True,7.0,4,r d d d
+33,True,7.0,4,r r u u
+34,True,7.0,4,u u u l
+35,True,10.0,1,r
+36,True,9.0,2,u u
+37,True,10.0,1,d
+38,True,7.0,4,r r r d
+39,True,10.0,1,r
+40,True,5.0,6,l u l l u u
+41,True,9.0,2,r u
+42,True,10.0,1,u
+43,True,8.0,3,r d r
+44,False,-45.0,45,l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l
+45,True,10.0,1,d
+46,True,8.0,3,u u l
+47,True,8.0,3,d l l
+48,True,9.0,2,u u
+49,True,9.0,2,l u
+50,True,9.0,2,u u
+51,True,7.0,4,d r d r
+52,True,10.0,1,d
+53,True,10.0,1,u
+54,True,9.0,2,r r
+55,True,10.0,1,r
+56,True,9.0,2,d l
+57,True,6.0,5,d d l l u
+58,True,8.0,3,r r r
+59,True,8.0,3,l u u
+60,True,7.0,4,r u r r
+61,True,9.0,2,l u
+62,True,8.0,3,l l d
+63,True,8.0,3,l l u
+64,True,8.0,3,r d d
+65,True,9.0,2,u l
+66,True,10.0,1,l
+67,True,9.0,2,d l
+68,True,7.0,4,u u u r
+69,True,10.0,1,r
+70,True,8.0,3,u u l
+71,True,7.0,4,d r r u
+72,True,6.0,5,r u u u l
+73,True,7.0,4,d d d r
+74,True,10.0,1,l
+75,True,9.0,2,l d
+76,True,8.0,3,r r d
+77,True,7.0,4,u u r r
+78,True,7.0,4,l u u r
+79,True,9.0,2,r u
+80,True,10.0,1,r
+81,False,-45.0,45,r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r
+82,True,6.0,5,u u r r u
+83,True,9.0,2,r u
+84,True,7.0,4,u l l l
+85,True,8.0,3,u u r
+86,True,9.0,2,d r
+87,True,6.0,5,u u r u r
+88,False,-45.0,45,d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d
+89,True,8.0,3,l l d
+90,True,8.0,3,r u u
+91,True,8.0,3,r u u
+92,True,9.0,2,r d
+93,True,9.0,2,u l
+94,True,9.0,2,d d
+95,True,10.0,1,l
+96,True,7.0,4,r r d r
+97,True,6.0,5,l u u u r
+98,True,8.0,3,r r d
+99,True,8.0,3,l l l
+100,True,6.0,5,d d d r r
+101,True,9.0,2,r r
+102,True,9.0,2,l u
+103,True,10.0,1,u
+104,True,6.0,5,d d r d r
+105,True,7.0,4,l d d l
+106,True,10.0,1,l
+107,True,5.0,6,l l l u u u
+108,True,8.0,3,u l l
+109,True,8.0,3,d d l
+110,True,9.0,2,l u
+111,True,7.0,4,l l u u
+112,True,8.0,3,r r r
+113,True,5.0,6,l u r r r d
+114,True,9.0,2,u l
+115,True,9.0,2,l d
+116,True,9.0,2,l u
+117,True,10.0,1,r
+118,True,8.0,3,r d d
+119,True,8.0,3,l u l
+120,True,6.0,5,r r d d d
+121,True,7.0,4,d d r r
+122,True,6.0,5,u r r r d
+123,True,9.0,2,d l
+124,True,8.0,3,d r r
+125,True,9.0,2,r d
+126,True,8.0,3,d d d
+127,True,8.0,3,r r d
+128,True,10.0,1,r
+129,True,9.0,2,l d
+130,True,10.0,1,u
+131,True,8.0,3,u u l
+132,True,9.0,2,r r
+133,True,8.0,3,l l l
+134,True,9.0,2,r d
+135,True,7.0,4,r u r u
+136,True,7.0,4,l l u l
+137,True,8.0,3,d r r
+138,True,7.0,4,r r r u
+139,True,8.0,3,d l l
+140,True,6.0,5,d r r d d
+141,True,10.0,1,d
+142,True,8.0,3,r r u
+143,True,6.0,5,r u r r d
+144,True,6.0,5,d d r d r
+145,True,8.0,3,l d l
+146,True,9.0,2,r r
+147,True,9.0,2,u u
+148,True,10.0,1,l
+149,True,8.0,3,u r r
+150,True,10.0,1,d
+151,True,8.0,3,u r u
+152,True,8.0,3,r r u
+153,True,10.0,1,l
+154,True,10.0,1,r
+155,True,7.0,4,d l d d
+156,True,8.0,3,d r d
+157,True,6.0,5,u u r u r
+158,True,9.0,2,r d
+159,True,7.0,4,l d d r
+160,True,8.0,3,u l u
+161,True,9.0,2,d l
+162,True,8.0,3,d d r
+163,True,10.0,1,l
+164,True,7.0,4,r d r r
+165,True,10.0,1,r
+166,True,9.0,2,r d
+167,True,10.0,1,r
+168,True,10.0,1,l
+169,True,8.0,3,l l l
+170,True,10.0,1,l
+171,True,8.0,3,u u l
+172,True,8.0,3,r r r
+173,True,7.0,4,r d r d
+174,True,9.0,2,l u
+175,True,9.0,2,u u
+176,True,7.0,4,u u r u
+177,True,8.0,3,l d l
+178,True,7.0,4,u r r r
+179,True,10.0,1,r
+180,True,6.0,5,r r u u l
+181,True,9.0,2,r r
+182,True,8.0,3,d r r
+183,True,7.0,4,u l l u
+184,True,9.0,2,d d
+185,True,9.0,2,d l
+186,True,6.0,5,u l u l l
+187,True,8.0,3,r r d
+188,True,8.0,3,r d d
+189,True,6.0,5,u r r r d
+190,True,10.0,1,d
+191,True,6.0,5,u r r r d
+192,True,8.0,3,d r r
+193,True,10.0,1,d
+194,True,8.0,3,r r u
+195,True,10.0,1,r
+196,True,7.0,4,u u l u
+197,True,9.0,2,u r
+198,True,9.0,2,r r
+199,True,10.0,1,u
+200,True,8.0,3,l u l
+201,True,7.0,4,d l l l
+202,True,7.0,4,r r r u
+203,True,6.0,5,l l l d d
+204,True,10.0,1,r
+205,True,10.0,1,r
+206,True,8.0,3,d d l
+207,True,8.0,3,r u u
+208,True,6.0,5,d d l l l
+209,True,7.0,4,r u u u
+210,True,6.0,5,r d r r d
+211,True,8.0,3,r r r
+212,True,9.0,2,r r
+213,True,10.0,1,r
+214,True,7.0,4,u u u l
+215,True,8.0,3,r r r
+216,True,7.0,4,u r r u
+217,True,6.0,5,r u r u u
+218,True,6.0,5,r d r r d
+219,True,6.0,5,l u l l u
+220,True,7.0,4,u u r r
+221,True,10.0,1,r
+222,True,9.0,2,u l
+223,True,8.0,3,r r r
+224,True,8.0,3,r u r
+225,True,9.0,2,u u
+226,True,8.0,3,u r r
+227,True,7.0,4,u l u u
+228,False,-45.0,45,u r u r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r
+229,True,6.0,5,r u u l u
+230,True,10.0,1,u
+231,True,9.0,2,u l
+232,True,8.0,3,l l d
+233,True,10.0,1,l
+234,True,9.0,2,u l
+235,True,9.0,2,u r
+236,True,7.0,4,u r r u
+237,True,7.0,4,d d l d
+238,True,10.0,1,d
+239,True,7.0,4,d d d r
+240,True,10.0,1,l
+241,True,8.0,3,u u r
+242,True,9.0,2,l l
+243,False,-45.0,45,u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u
+244,True,10.0,1,d
+245,True,10.0,1,u
+246,True,8.0,3,r r d
+247,True,9.0,2,d l
+248,True,8.0,3,d l d
+249,True,7.0,4,r u u r
+250,True,9.0,2,r d
+251,True,10.0,1,u
+252,True,6.0,5,r r r u u
+253,True,10.0,1,d
+254,True,9.0,2,u l
+255,True,7.0,4,d r r r
+256,True,7.0,4,l l d l
+257,True,6.0,5,u r r d r
+258,True,10.0,1,r
+259,True,8.0,3,d d d
+260,True,9.0,2,l l
+261,True,6.0,5,d l l d l
+262,True,9.0,2,d d
+263,True,7.0,4,d l l d
+264,True,6.0,5,u r r r d
+265,True,6.0,5,u u r u r
+266,True,9.0,2,l l
+267,True,9.0,2,l u
+268,True,9.0,2,r r
+269,True,10.0,1,l
+270,True,9.0,2,l l
+271,True,8.0,3,d d l
+272,True,9.0,2,r r
+273,True,8.0,3,u u r
+274,True,10.0,1,l
+275,True,9.0,2,d d
+276,True,7.0,4,d d r d
+277,True,7.0,4,r d d d
+278,True,10.0,1,d
+279,True,8.0,3,d d l
+280,True,8.0,3,l l u
+281,True,8.0,3,l d d
+282,True,9.0,2,r r
+283,True,6.0,5,u r r r u
+284,True,9.0,2,u u
+285,True,9.0,2,l l
+286,True,8.0,3,r u u
+287,True,8.0,3,d l d
+288,True,8.0,3,r d r
+289,True,9.0,2,r d
+290,True,9.0,2,d l
+291,True,9.0,2,r r
+292,True,10.0,1,r
+293,True,8.0,3,r u r
+294,True,10.0,1,d
+295,False,-45.0,45,r u r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r
+296,True,9.0,2,u l
+297,True,9.0,2,u u
+298,True,5.0,6,l l u u u r
+299,True,8.0,3,d d r
+300,True,7.0,4,l d d l

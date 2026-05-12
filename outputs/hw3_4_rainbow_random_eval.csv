@@ -1,0 +1,301 @@
+episode,won,raw_return,moves,actions
+1,True,10.0,1,r
+2,True,5.0,6,u l d d d l
+3,True,10.0,1,u
+4,True,7.0,4,d d d r
+5,True,10.0,1,l
+6,True,9.0,2,r d
+7,True,7.0,4,l u u l
+8,True,6.0,5,u u l l u
+9,True,10.0,1,u
+10,True,10.0,1,u
+11,True,7.0,4,u r u r
+12,True,9.0,2,r r
+13,True,8.0,3,l u l
+14,True,4.0,7,r r r u u u l
+15,True,6.0,5,l l d l d
+16,True,9.0,2,d l
+17,True,8.0,3,d d d
+18,True,9.0,2,r r
+19,True,9.0,2,d d
+20,True,9.0,2,d l
+21,True,7.0,4,r u u l
+22,True,8.0,3,u r u
+23,True,9.0,2,u u
+24,True,5.0,6,l l u u l u
+25,False,-45.0,45,r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r
+26,True,9.0,2,d l
+27,True,9.0,2,u u
+28,True,6.0,5,r r d d d
+29,True,6.0,5,l d l d d
+30,True,8.0,3,d d r
+31,True,9.0,2,u r
+32,True,8.0,3,r u u
+33,True,8.0,3,l l d
+34,True,8.0,3,l l d
+35,True,8.0,3,r u r
+36,True,9.0,2,d r
+37,True,7.0,4,u l u l
+38,True,8.0,3,u u u
+39,True,6.0,5,l u u r u
+40,True,9.0,2,r r
+41,True,10.0,1,u
+42,True,9.0,2,l d
+43,True,10.0,1,l
+44,True,8.0,3,l l u
+45,True,8.0,3,r d r
+46,True,9.0,2,d l
+47,True,10.0,1,u
+48,True,8.0,3,d d l
+49,True,8.0,3,d d d
+50,True,10.0,1,u
+51,True,10.0,1,r
+52,True,6.0,5,d r r r d
+53,True,9.0,2,d d
+54,True,8.0,3,d r r
+55,False,-45.0,45,l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l
+56,True,9.0,2,u u
+57,True,9.0,2,l d
+58,True,10.0,1,l
+59,False,-10.0,1,r
+60,True,7.0,4,u u l u
+61,True,6.0,5,d l d l l
+62,True,10.0,1,l
+63,True,7.0,4,r d r r
+64,False,-45.0,45,u u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d
+65,True,9.0,2,d d
+66,True,7.0,4,l d l d
+67,True,8.0,3,u l l
+68,True,8.0,3,r u r
+69,True,8.0,3,l l d
+70,True,7.0,4,l l d d
+71,True,8.0,3,u l l
+72,True,8.0,3,d r r
+73,True,9.0,2,r r
+74,True,10.0,1,d
+75,True,10.0,1,d
+76,False,-10.0,1,u
+77,True,9.0,2,l u
+78,True,10.0,1,l
+79,True,6.0,5,l l d d r
+80,True,10.0,1,u
+81,True,6.0,5,l u l u l
+82,True,9.0,2,r r
+83,True,7.0,4,d l l l
+84,True,9.0,2,d d
+85,True,9.0,2,d d
+86,True,10.0,1,d
+87,True,9.0,2,u r
+88,True,6.0,5,l u u l u
+89,False,-45.0,45,u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u
+90,True,6.0,5,l d d d r
+91,True,10.0,1,r
+92,True,9.0,2,l d
+93,True,9.0,2,r d
+94,True,6.0,5,u u r r u
+95,False,-10.0,1,l
+96,True,9.0,2,d r
+97,True,9.0,2,u l
+98,True,9.0,2,d d
+99,True,10.0,1,l
+100,True,10.0,1,r
+101,True,10.0,1,u
+102,False,-11.0,2,l u
+103,False,-11.0,2,u l
+104,True,10.0,1,d
+105,True,9.0,2,r u
+106,True,6.0,5,u r r u u
+107,False,-45.0,45,l l u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u
+108,True,10.0,1,l
+109,False,-45.0,45,u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u
+110,True,5.0,6,r d l l d d
+111,True,9.0,2,d r
+112,True,7.0,4,r r r d
+113,True,7.0,4,r u u r
+114,True,9.0,2,u u
+115,True,8.0,3,u u r
+116,True,8.0,3,d r r
+117,True,10.0,1,u
+118,True,9.0,2,d d
+119,True,8.0,3,r r d
+120,True,8.0,3,d r d
+121,True,6.0,5,r r r u u
+122,True,8.0,3,u u r
+123,True,7.0,4,l l u l
+124,True,10.0,1,d
+125,True,10.0,1,d
+126,True,6.0,5,d r d r r
+127,True,9.0,2,l l
+128,False,-45.0,45,l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l
+129,True,5.0,6,l l d d d r
+130,True,8.0,3,u u r
+131,True,8.0,3,d l d
+132,True,9.0,2,d d
+133,True,10.0,1,r
+134,True,6.0,5,u u u r r
+135,True,8.0,3,l l d
+136,True,10.0,1,r
+137,True,9.0,2,u r
+138,True,9.0,2,u u
+139,True,10.0,1,d
+140,True,6.0,5,u u u r r
+141,True,9.0,2,d l
+142,True,8.0,3,l l d
+143,True,8.0,3,d l d
+144,True,8.0,3,d d d
+145,True,9.0,2,r d
+146,False,-45.0,45,d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d
+147,True,7.0,4,r d d r
+148,True,8.0,3,l d l
+149,True,7.0,4,l u l u
+150,True,10.0,1,u
+151,True,10.0,1,r
+152,True,9.0,2,l l
+153,True,6.0,5,u r r u r
+154,True,3.0,8,d d d r r r u u
+155,True,6.0,5,u r d d d
+156,True,6.0,5,r d d l d
+157,True,9.0,2,u u
+158,True,7.0,4,d d l l
+159,True,9.0,2,u u
+160,True,9.0,2,u l
+161,True,9.0,2,r d
+162,True,6.0,5,d d r r r
+163,True,7.0,4,u l u l
+164,True,8.0,3,l l d
+165,True,9.0,2,r d
+166,True,9.0,2,r d
+167,True,8.0,3,r r r
+168,True,10.0,1,d
+169,True,9.0,2,u u
+170,True,7.0,4,r u u r
+171,True,9.0,2,d r
+172,True,10.0,1,r
+173,True,8.0,3,r r d
+174,True,9.0,2,l l
+175,True,8.0,3,u l u
+176,True,9.0,2,r r
+177,True,10.0,1,u
+178,True,6.0,5,u u r u r
+179,True,8.0,3,l d d
+180,True,10.0,1,u
+181,True,9.0,2,d r
+182,True,6.0,5,u l u u l
+183,True,10.0,1,u
+184,True,9.0,2,u u
+185,True,10.0,1,u
+186,True,9.0,2,l u
+187,True,9.0,2,u r
+188,True,7.0,4,r r u r
+189,True,9.0,2,u u
+190,True,10.0,1,u
+191,True,10.0,1,l
+192,True,10.0,1,d
+193,True,7.0,4,r r u r
+194,True,10.0,1,u
+195,True,10.0,1,d
+196,True,6.0,5,d l l l u
+197,True,10.0,1,d
+198,True,8.0,3,r r r
+199,True,6.0,5,d l d d l
+200,True,9.0,2,d l
+201,True,8.0,3,r u u
+202,False,-45.0,45,d r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l
+203,True,9.0,2,r r
+204,False,-12.0,3,l u l
+205,True,10.0,1,r
+206,True,8.0,3,u u r
+207,True,8.0,3,l l u
+208,True,9.0,2,u l
+209,True,9.0,2,d d
+210,True,9.0,2,u u
+211,True,7.0,4,l l l d
+212,True,8.0,3,l l u
+213,False,-11.0,2,l l
+214,True,4.0,7,l u l u u r r
+215,True,9.0,2,u r
+216,True,7.0,4,r r d d
+217,True,10.0,1,l
+218,True,6.0,5,l l l u u
+219,True,7.0,4,u u r r
+220,True,8.0,3,d d r
+221,True,7.0,4,l u l u
+222,True,8.0,3,r u r
+223,True,9.0,2,d d
+224,True,8.0,3,r r r
+225,False,-45.0,45,l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l
+226,True,8.0,3,u u u
+227,True,10.0,1,r
+228,True,9.0,2,u u
+229,True,10.0,1,l
+230,False,-45.0,45,l d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u d u
+231,True,6.0,5,l l u u u
+232,True,8.0,3,d d l
+233,True,7.0,4,l d d r
+234,True,6.0,5,l l d l d
+235,True,9.0,2,r u
+236,True,10.0,1,d
+237,True,10.0,1,d
+238,True,9.0,2,u u
+239,True,9.0,2,u l
+240,True,10.0,1,d
+241,True,9.0,2,l l
+242,True,8.0,3,d d d
+243,True,10.0,1,r
+244,False,-11.0,2,d d
+245,True,8.0,3,r d r
+246,True,9.0,2,d d
+247,True,9.0,2,d d
+248,True,7.0,4,l u u l
+249,True,9.0,2,l l
+250,True,8.0,3,r r r
+251,True,6.0,5,r r r u u
+252,True,7.0,4,r d d d
+253,True,8.0,3,l l d
+254,True,9.0,2,r r
+255,False,-10.0,1,u
+256,True,9.0,2,r d
+257,True,7.0,4,u u u r
+258,True,7.0,4,r d r d
+259,True,6.0,5,u u r r u
+260,True,9.0,2,u u
+261,True,9.0,2,l u
+262,True,8.0,3,l u l
+263,True,8.0,3,r r r
+264,True,7.0,4,u l l u
+265,True,9.0,2,d d
+266,True,6.0,5,r r u u r
+267,True,9.0,2,u r
+268,True,8.0,3,l d d
+269,True,7.0,4,u u r r
+270,True,9.0,2,u u
+271,True,7.0,4,l d l l
+272,True,9.0,2,u u
+273,True,8.0,3,l l l
+274,True,3.0,8,l d d d l u l u
+275,True,7.0,4,d l l l
+276,True,6.0,5,r u r r d
+277,True,8.0,3,r d d
+278,True,9.0,2,d d
+279,False,-11.0,2,d d
+280,True,7.0,4,d d d l
+281,True,10.0,1,r
+282,True,10.0,1,l
+283,True,10.0,1,u
+284,True,8.0,3,r u u
+285,True,10.0,1,l
+286,True,8.0,3,d d l
+287,True,10.0,1,d
+288,False,-45.0,45,l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l r l
+289,True,8.0,3,d r d
+290,True,10.0,1,l
+291,True,10.0,1,l
+292,True,9.0,2,d d
+293,True,10.0,1,l
+294,True,9.0,2,r d
+295,True,7.0,4,d r r u
+296,True,6.0,5,r u u r r
+297,True,7.0,4,d r r r
+298,True,9.0,2,r d
+299,True,9.0,2,r d
+300,True,8.0,3,d d d

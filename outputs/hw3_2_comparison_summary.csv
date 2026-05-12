@@ -1,0 +1,4 @@
+variant,train_final_success_100,first_episode_rolling_success_ge_90,eval_win_rate,eval_average_return,eval_average_length,updates
+basic_dqn,1.0,506,1.0,6.615384615384615,4.384615384615385,21124
+double_dqn,1.0,472,1.0,6.615384615384615,4.384615384615385,20630
+dueling_dqn,1.0,507,1.0,6.615384615384615,4.384615384615385,21125

@@ -1,0 +1,65 @@
+{
+  "algorithm": "Rainbow DQN",
+  "config": {
+    "episodes": 7000,
+    "max_moves": 45,
+    "replay_capacity": 20000,
+    "warmup_steps": 600,
+    "batch_size": 64,
+    "gamma": 0.95,
+    "n_step": 5,
+    "learning_rate": 0.0008,
+    "min_learning_rate": 0.0001,
+    "target_sync_freq": 250,
+    "gradient_clip_val": 10.0,
+    "priority_alpha": 0.4,
+    "priority_beta_start": 0.4,
+    "priority_beta_frames": 30000,
+    "n_atoms": 51,
+    "v_min": -50.0,
+    "v_max": 15.0,
+    "noisy_std": 0.1,
+    "epsilon_start": 1.0,
+    "epsilon_end": 0.02,
+    "epsilon_decay_episodes": 3500,
+    "reward_shaping_scale": 0.2,
+    "auxiliary_q_loss_weight": 5.0,
+    "seed": 31,
+    "eval_episodes": 300,
+    "output_dir": "outputs"
+  },
+  "training": {
+    "episodes": 7000,
+    "env_steps": 40116,
+    "updates": 39507,
+    "final_replay_size": 20000,
+    "final_rolling_success_100": 0.89,
+    "last_loss": 2.0256576538085938
+  },
+  "evaluation": {
+    "episodes": 300,
+    "wins": 278,
+    "win_rate": 0.9266666666666666,
+    "average_raw_return": 5.486666666666666,
+    "average_length": 4.406666666666666
+  },
+  "rainbow_components": [
+    "Double DQN",
+    "Dueling network",
+    "Prioritized Experience Replay",
+    "n-step returns",
+    "C51 distributional value function",
+    "NoisyLinear exploration"
+  ],
+  "training_stabilizers": [
+    "convolutional state encoder",
+    "target network synchronization",
+    "invalid-action mask for wall/out-of-bounds moves",
+    "auxiliary expected-Q Huber loss",
+    "AdamW optimizer",
+    "cosine learning rate scheduler",
+    "gradient clipping",
+    "Manhattan-distance reward shaping",
+    "small epsilon schedule in addition to NoisyLinear exploration"
+  ]
+}

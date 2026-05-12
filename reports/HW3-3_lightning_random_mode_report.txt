@@ -1,0 +1,50 @@
+HW3-3 Report: Enhanced DQN for Random Mode with PyTorch Lightning
+
+1. Task summary
+This task converts the previous PyTorch DQN style into PyTorch Lightning and applies it to random mode. In random mode, the player, goal, pit, and wall positions are all sampled randomly without overlap. The implementation also checks that the goal is reachable from the player without crossing the wall or pit.
+
+2. Framework conversion
+The model is implemented as a PyTorch LightningModule in hw3_3/lightning_random_dqn.py. Lightning is used to organize the training loop, optimizer configuration, scheduler configuration, logging hooks, and checkpoint saving. Because reinforcement learning does not naturally use a fixed supervised dataset, the Lightning DataLoader yields dummy episode indices and each Lightning training_step runs one full environment episode.
+
+3. DQN enhancements and training tips
+The random-mode agent includes several stabilizing techniques:
+
+    - Convolutional state encoder: uses the 4x4 board structure instead of treating the state only as unrelated flat features.
+    - Dueling Q-network: separates state value V(s) from action advantage A(s,a).
+    - Double DQN target: the online network selects the next action, and the target network evaluates it.
+    - Target network synchronization: the target network is copied from the online network every fixed number of updates.
+    - Experience replay: transitions are sampled randomly from a replay buffer.
+    - Huber loss: smooth_l1_loss is less sensitive to large TD errors than MSE.
+    - Gradient clipping: clips gradient norm to reduce unstable updates.
+    - AdamW optimizer: adds decoupled weight decay.
+    - Cosine learning rate scheduler: gradually lowers the learning rate during training.
+    - Epsilon-greedy schedule: exploration starts high and decays over episodes.
+    - Reward shaping: non-terminal moves receive a small bonus when the player moves closer to the goal by Manhattan distance.
+
+4. Why these improve basic DQN
+Basic DQN can become unstable because the same network both selects and evaluates the max next-state action. Double DQN reduces this overestimation. Dueling DQN helps learn whether a state is good even if action differences are small. Replay buffer sampling reduces correlation between updates. The target network, Huber loss, gradient clipping, and learning rate scheduling all reduce update noise and make training more stable.
+
+5. Run command
+The main command is:
+
+    python -m hw3_3.lightning_random_dqn --episodes 5000 --eval-episodes 300 --seed 23
+
+Outputs are saved to:
+
+    outputs/hw3_3_lightning_random_metrics.json
+    outputs/hw3_3_lightning_random_training.csv
+    outputs/hw3_3_lightning_random_eval.csv
+    outputs/hw3_3_lightning_random_dqn.ckpt
+    outputs/hw3_3_lightning_random_dqn.pt
+
+6. Results
+I ran the command above with 5000 training episodes and 300 evaluation episodes. The final training rolling success over the last 100 episodes was 99%. The greedy evaluation result was:
+
+    Evaluation episodes: 300
+    Wins: 292
+    Win rate: 97.33%
+    Average raw return: 6.757
+    Average episode length: 3.95 moves
+
+7. Interpretation
+Random mode is harder than static and player mode because every object can move between episodes. The convolutional encoder improved generalization by preserving spatial relationships on the 4x4 board. Double DQN and the target network stabilized TD targets, while Huber loss, gradient clipping, and the learning rate scheduler reduced unstable gradient updates. Reward shaping also helped exploration by giving a small signal when an action moved the player closer to the goal.

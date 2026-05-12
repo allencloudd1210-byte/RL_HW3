@@ -1,0 +1,20 @@
+name: rl-hw3
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.12
+  - pip
+  - numpy
+  - matplotlib
+  - pandas
+  - tqdm
+  - pyyaml
+  - ipykernel
+  - notebook
+  - jupyter
+  - pip:
+      - torch>=2.3,<3
+      - lightning>=2.5,<3
+      - gymnasium[classic-control]>=0.29,<1.1
+      - pygame>=2.5

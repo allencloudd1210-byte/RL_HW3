@@ -1,0 +1,39 @@
+{
+  "config": {
+    "episodes": 1500,
+    "max_moves": 50,
+    "replay_capacity": 5000,
+    "batch_size": 64,
+    "gamma": 0.95,
+    "learning_rate": 0.001,
+    "epsilon_start": 1.0,
+    "epsilon_end": 0.05,
+    "epsilon_decay_episodes": 900,
+    "seed": 7,
+    "eval_episodes": 50,
+    "output_dir": "outputs"
+  },
+  "training": {
+    "episodes": 1500,
+    "final_replay_size": 5000,
+    "final_rolling_success_100": 0.98,
+    "updates": 18753,
+    "last_loss": 0.049806538969278336
+  },
+  "evaluation": {
+    "episodes": 50,
+    "wins": 50,
+    "win_rate": 1.0,
+    "average_return": 4.0,
+    "average_length": 7.0,
+    "example_greedy_actions": [
+      "d",
+      "d",
+      "l",
+      "l",
+      "l",
+      "u",
+      "u"
+    ]
+  }
+}

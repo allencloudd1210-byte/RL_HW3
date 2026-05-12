@@ -1,0 +1,54 @@
+HW3-4 Bonus Report: Rainbow DQN for Random Mode GridWorld
+
+1. Task summary
+This bonus task uses Rainbow DQN to solve Random Mode GridWorld. In random mode, the player, goal, pit, and wall are sampled randomly each episode. The implementation reuses the RandomGridworld environment from the previous tasks and adds a standalone Rainbow implementation in hw3_4/rainbow_random_dqn.py.
+
+2. Rainbow components
+The implemented Rainbow DQN combines the following DQN improvements:
+
+    - Double DQN: the online network selects the next action, and the target network evaluates it.
+    - Dueling network: value and advantage streams are learned separately.
+    - Prioritized Experience Replay: transitions with larger distributional TD loss are sampled more often.
+    - n-step returns: 5-step returns propagate rewards faster than one-step targets.
+    - Distributional DQN / C51: the model predicts a categorical return distribution instead of a single Q value.
+    - Noisy Nets: NoisyLinear layers provide learned exploration instead of relying only on epsilon-greedy noise.
+
+3. C51 setup
+The C51 support uses 51 atoms. Because a timeout episode can be strongly negative and the goal reward is positive, the support is set to:
+
+    v_min = -50
+    v_max = 15
+    atoms = 51
+
+The target distribution is projected back onto this fixed support after applying the n-step return target.
+
+4. Training stabilizers
+The implementation also uses a convolutional board encoder, target network synchronization, AdamW, cosine learning rate scheduling, gradient clipping, reward shaping based on Manhattan-distance progress, and importance-sampling weights for PER. For this small GridWorld, I also used an invalid-action mask for moves that would go outside the board or hit the wall. The mask does not block pit actions, so avoiding the pit still has to be learned from reward.
+
+The pure distributional C51 loss was slow to stabilize on this small environment, so the final version adds an auxiliary expected-Q Huber loss computed from the predicted and target distributions. This keeps the Rainbow/C51 output while making the expected Q-values converge more reliably.
+
+5. Run command
+The main command is:
+
+    python -m hw3_4.rainbow_random_dqn --episodes 7000 --eval-episodes 300 --seed 31
+
+Outputs are saved to:
+
+    outputs/hw3_4_rainbow_random_metrics.json
+    outputs/hw3_4_rainbow_random_training.csv
+    outputs/hw3_4_rainbow_random_eval.csv
+    outputs/hw3_4_rainbow_random_dqn.pt
+
+6. Results
+The final run used 7000 training episodes and evaluated the greedy policy on 300 unseen random-mode boards.
+
+    Evaluation episodes: 300
+    Wins: 278
+    Win rate: 92.67%
+    Average raw return: 5.487
+    Average episode length: 4.407 moves
+
+The final training rolling success over the last 100 episodes was 89%. Evaluation was higher because evaluation runs without exploration noise and uses the learned greedy policy.
+
+7. Interpretation
+Rainbow DQN is heavier than the previous DQN variants because it learns a categorical return distribution and maintains priorities for the replay buffer. On this small GridWorld, the most useful components were n-step returns, Double DQN targets, the convolutional dueling architecture, and the invalid-action mask. PER and C51 were still implemented, but they needed the auxiliary expected-Q loss to stabilize learning. The final policy solves most random-mode boards and reaches the goal in about 4.4 moves on average.

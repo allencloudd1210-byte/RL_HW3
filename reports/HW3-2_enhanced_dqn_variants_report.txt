@@ -1,0 +1,55 @@
+HW3-2 Report: Enhanced DQN Variants for Player Mode
+
+1. Task summary
+This task compares enhanced DQN variants in player mode. In player mode, the goal, pit, and wall remain fixed, but the player starts from a random valid cell. This is harder than static mode because the agent must learn a policy for many possible starting states, not only one fixed trajectory.
+
+2. Compared methods
+Basic DQN is used as the baseline. It uses a normal Q-network, epsilon-greedy exploration, and experience replay. The target is computed with the same online network:
+
+    y = r + gamma * max_a Q_online(s', a)
+
+Double DQN uses two networks for target calculation. The online network selects the best next action, and the target network evaluates that action:
+
+    a* = argmax_a Q_online(s', a)
+    y = r + gamma * Q_target(s', a*)
+
+This reduces overestimation bias because action selection and action evaluation are decoupled.
+
+Dueling DQN changes the network architecture. Instead of directly predicting Q-values, it predicts a state-value stream V(s) and an advantage stream A(s,a), then combines them:
+
+    Q(s,a) = V(s) + A(s,a) - mean_a A(s,a)
+
+This helps the model learn which states are valuable even when the differences between actions are small.
+
+3. Experience replay
+All methods use a replay buffer storing (state, action, reward, next_state, done). Minibatches are sampled randomly from the buffer to reduce correlation between consecutive transitions and improve sample reuse.
+
+4. Expected comparison focus
+Basic DQN can learn this task, but its max target can overestimate action values. Double DQN improves the target estimate by separating action selection from action evaluation. Dueling DQN improves representation learning by explicitly separating state value from action advantage, which is useful when many states have obvious value but action differences are subtle.
+
+5. Run command
+The comparison script is:
+
+    python -m hw3_2.player_mode_variants --episodes 2200 --eval-repeats 10 --seed 11
+
+It saves comparison metrics to outputs/hw3_2_comparison_metrics.json and summary results to outputs/hw3_2_comparison_summary.csv.
+
+6. Results
+The evaluation tested all 13 valid player starting positions for 10 repeats, giving 130 evaluation episodes per method.
+
+    Method       Final train success   First episode with rolling success >= 90%   Eval win rate   Avg return   Avg length
+    Basic DQN    100%                  506                                         100%            6.615        4.385
+    Double DQN   100%                  472                                         100%            6.615        4.385
+    Dueling DQN  100%                  507                                         100%            6.615        4.385
+
+7. Interpretation
+All three methods solved this small player-mode Gridworld, so the final evaluation win rate does not separate the methods. The more useful comparison is learning behavior. Double DQN reached the 90% rolling training success threshold earliest in this run, which is consistent with its goal of reducing over-optimistic max-Q targets. Dueling DQN also solved the task, but this small grid has only four actions and short optimal paths, so its value/advantage representation does not create a large final-score difference. In larger or noisier environments, the dueling architecture is expected to help more because it can learn state quality separately from action-specific advantages.
+
+8. Submitted files
+The main implementation is in hw3_2/player_mode_variants.py. The player-mode environment support is in hw3_1/gridworld.py through the PlayerGridworld class. The saved outputs are:
+
+    outputs/hw3_2_comparison_summary.csv
+    outputs/hw3_2_comparison_metrics.json
+    outputs/hw3_2_basic_dqn.pt
+    outputs/hw3_2_double_dqn.pt
+    outputs/hw3_2_dueling_dqn.pt

@@ -1,0 +1,7 @@
+# Optional image/Atari dependencies.
+# Install only if the instructor starter code asks for Atari-style input.
+-r requirements.txt
+gymnasium[atari,accept-rom-license]>=0.29,<1.1
+ale-py>=0.8
+opencv-python>=4.9
+pillow>=10

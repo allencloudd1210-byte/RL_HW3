@@ -1,0 +1,50 @@
+{
+  "framework": "PyTorch Lightning",
+  "config": {
+    "episodes": 5000,
+    "max_moves": 45,
+    "replay_capacity": 20000,
+    "warmup_steps": 512,
+    "batch_size": 96,
+    "gamma": 0.95,
+    "learning_rate": 0.0008,
+    "min_learning_rate": 0.0001,
+    "epsilon_start": 1.0,
+    "epsilon_end": 0.05,
+    "epsilon_decay_episodes": 3500,
+    "target_sync_freq": 250,
+    "gradient_clip_val": 10.0,
+    "reward_shaping_scale": 0.2,
+    "seed": 23,
+    "eval_episodes": 300,
+    "output_dir": "outputs"
+  },
+  "training": {
+    "episodes": 5000,
+    "env_steps": 30312,
+    "updates": 29801,
+    "final_replay_size": 20000,
+    "final_rolling_success_100": 0.99,
+    "last_loss": 0.014734436757862568
+  },
+  "evaluation": {
+    "episodes": 300,
+    "wins": 292,
+    "win_rate": 0.9733333333333334,
+    "average_raw_return": 6.756666666666667,
+    "average_length": 3.95
+  },
+  "training_tips": [
+    "PyTorch Lightning manual optimization",
+    "convolutional state encoder for 4x4 spatial structure",
+    "Dueling network architecture",
+    "Double DQN target computation",
+    "target network synchronization",
+    "Huber loss",
+    "gradient clipping",
+    "AdamW optimizer",
+    "cosine learning rate scheduling",
+    "reward shaping based on Manhattan-distance progress",
+    "epsilon-greedy exploration schedule"
+  ]
+}
