@@ -81,5 +81,6 @@
 [2026-05-12 Asia/Taipei] Assistant: Git 使用者名稱與 email 已有設定。我會先查遠端 repo 目前是否已有 commit，避免直接覆蓋既有內容。
 [2026-05-12 Asia/Taipei] Assistant: 遠端 repo 沒有列出任何 refs，看起來是空 repo。我會加入 remote、建立初始 commit，然後推到 `main`。
 [2026-05-12 Asia/Taipei] Assistant: 待提交檔案已確認，沒有把 `.venv`、reference repo、`.pt` 或 `.ckpt` 納入版本控制。接下來建立 initial commit 並推送。
+[2026-05-12 Asia/Taipei] Assistant: 已推上 GitHub：`https://github.com/allencloudd1210-byte/RL_HW3.git`，branch 是 `main`。我也補了 `README.md`，並用 `.gitignore` 排除了 `.venv/`、`reference/`、模型權重 `.pt` 與 Lightning checkpoint `.ckpt`；程式、報告、PDF、metrics 與 CSV 都已提交。第一個 commit 是 `de400f8`，接著我會再推一個小 commit 更新這次推送紀錄。
 [2026-05-11 Asia/Taipei] User: 幫我完成
 [2026-05-11 Asia/Taipei] Assistant: 我會直接實作 HW3-4 Rainbow DQN：新增 bonus 模組、報告與訓練輸出，然後跑一次 random mode 訓練與評估確認結果。
